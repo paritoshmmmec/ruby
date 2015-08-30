@@ -6,6 +6,7 @@ new_colors= Array.new
 #declare an array
 
 number= [1,2,3,4,5]
+puts number.include?(1)
 
 #index value starting from zero ,typical stuff
 puts number[2].nil?
@@ -14,6 +15,7 @@ puts number[2]
 #does not throw error 
 puts number[10].nil?
 puts number[10]
+
 
 
 #array index can be negative too
