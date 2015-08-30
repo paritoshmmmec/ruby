@@ -98,9 +98,3 @@ end
 
 puts array_of_fixnums?( [1,2,3])
 
-def kaprekar?(k)
-  product= k * k
-  return product
-end
-
-puts kaprekar?(9)
