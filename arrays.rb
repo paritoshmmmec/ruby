@@ -65,3 +65,37 @@ array = [["ArryOne",1],["ArrayTwo",2], ["ArrayFour",4]]
 for i in array
 	  puts "I am First one in inside array #{i[0]} , second value #{i[1]}"
 end
+
+
+def array_copy(source)
+  destination = source.select{|number| number<4}
+  # your code
+  return destination
+end
+
+
+def array_copy1(source)
+  destination=[]
+  for elem in source
+	  if(elem < 4)
+		  destination << elem
+	  end
+  end
+  # your code
+  return destination
+end
+
+puts array_copy1([1,2,3,-1, -2,4,5,5,6,66,6,6,6])
+
+#This is a sin to do looping like this 
+#here is another one
+
+array = [1, 2, 3, 4, 5]
+def array_copy(source)
+  destination=[]
+  array.each do |i|
+   if(i<4) 
+	   destination.push(i)
+   end	  
+  end
+end
